@@ -172,8 +172,8 @@ p {
 h1 {
   max-width: 790px;
   margin-bottom: 20px;
-  font-size: 7.6rem;
-  line-height: 0.92;
+  font-size: 5.4rem;
+  line-height: 0.98;
   letter-spacing: 0;
 }
 
@@ -525,7 +525,7 @@ footer {
   }
 
   h1 {
-    font-size: 5.4rem;
+    font-size: 4.25rem;
   }
 
   h2 {
@@ -569,7 +569,7 @@ footer {
   }
 
   h1 {
-    font-size: 3.65rem;
+    font-size: 2.85rem;
   }
 
   h2 {
