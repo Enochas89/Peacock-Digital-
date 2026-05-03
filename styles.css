@@ -607,8 +607,101 @@ textarea {
   color: var(--muted);
 }
 
+.industry-grid a,
+.local-link-list a {
+  display: inline-flex;
+  margin-top: 12px;
+  color: var(--peacock-dark);
+  font-weight: 900;
+}
+
 .industries-section {
   padding-top: 40px;
+}
+
+.subpage-hero {
+  padding: 98px 22px 74px;
+  color: var(--white);
+  background:
+    linear-gradient(90deg, rgba(5, 30, 27, 0.92), rgba(5, 30, 27, 0.6)),
+    url("https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1800&q=80") center / cover;
+}
+
+.subpage-hero-inner,
+.subpage-section {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.subpage-hero h1 {
+  max-width: 880px;
+  font-size: 4.6rem;
+}
+
+.subpage-hero p {
+  max-width: 740px;
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 1.22rem;
+}
+
+.subpage-section {
+  padding: 72px 22px;
+}
+
+.subpage-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 44px;
+  align-items: start;
+}
+
+.content-panel {
+  padding: 26px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.content-panel p,
+.content-panel li,
+.subpage-section p {
+  color: var(--muted);
+}
+
+.content-panel ul,
+.local-link-list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+}
+
+.local-link-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  padding: 0;
+  list-style: none;
+}
+
+.subpage-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  max-width: 1180px;
+  margin: 0 auto 74px;
+  padding: 38px;
+  color: var(--white);
+  background: var(--ink);
+  border-radius: 8px;
+}
+
+.subpage-cta h2 {
+  margin-bottom: 8px;
+  font-size: 2.4rem;
+}
+
+.subpage-cta p {
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.76);
 }
 
 .faq-section {
@@ -701,6 +794,13 @@ footer {
   border-top: 1px solid var(--line);
 }
 
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: flex-end;
+}
+
 .form-success {
   display: grid;
   min-height: 320px;
@@ -759,6 +859,15 @@ footer {
     grid-template-columns: 1fr;
   }
 
+  .subpage-grid,
+  .subpage-cta {
+    grid-template-columns: 1fr;
+  }
+
+  .subpage-cta {
+    display: grid;
+  }
+
   .image-feature img {
     height: 420px;
   }
@@ -790,6 +899,10 @@ footer {
 
   h1 {
     font-size: 2.85rem;
+  }
+
+  .subpage-hero h1 {
+    font-size: 2.8rem;
   }
 
   h2 {
@@ -827,5 +940,13 @@ footer {
   footer {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .local-link-list {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-links {
+    justify-content: flex-start;
   }
 }

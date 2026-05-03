@@ -48,6 +48,7 @@ Still needed:
 - Google Business Profile URL
 - Real social/profile links
 - Preferred primary market: Knoxville, Chattanooga, or equal focus
+- Live production domain for canonical tags and XML sitemap
 
 ## Target Keyword Map
 
@@ -77,6 +78,40 @@ Service pages:
 - local SEO for law firms
 - local SEO for dentists
 - local SEO for restaurants
+
+## Long-Tail Keyword Strategy
+
+Common head terms like "SEO agency" and "local SEO services" are saturated.
+The fastest path is to build useful pages around specific buyer intent:
+
+- local SEO agency Knoxville TN
+- local SEO company Chattanooga TN
+- Google Business Profile optimization Knoxville
+- Google Business Profile optimization Chattanooga
+- SEO for contractors Knoxville
+- SEO for contractors Chattanooga
+- roofing SEO Knoxville
+- HVAC SEO Chattanooga
+- plumbing SEO Knoxville
+- electrician SEO Chattanooga
+- emergency repair SEO Tennessee
+- SEO for dentists Knoxville
+- emergency dentist SEO Chattanooga
+- dental implants SEO Knoxville
+- Invisalign SEO Chattanooga
+- SEO for lawyers Knoxville
+- law firm SEO Chattanooga
+- personal injury lawyer SEO Knoxville
+- criminal defense lawyer SEO Chattanooga
+- SEO for restaurants Knoxville
+- restaurant SEO Chattanooga
+- catering SEO Knoxville
+- reservations SEO Chattanooga
+
+Important rule:
+Use these phrases naturally in helpful page sections. Do not keyword-stuff.
+Google needs enough topical coverage to understand the page, but the content
+still needs to read like it was written for real business owners.
 
 ## Site Structure
 
