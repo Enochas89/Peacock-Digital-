@@ -436,13 +436,15 @@ textarea {
   padding-top: 38px;
 }
 
-.local-grid {
+.local-grid,
+.industry-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 16px;
 }
 
-.local-grid article {
+.local-grid article,
+.industry-grid article {
   min-height: 250px;
   padding: 24px;
   background: var(--white);
@@ -451,8 +453,13 @@ textarea {
 }
 
 .local-grid p,
+.industry-grid p,
 .faq-list p {
   color: var(--muted);
+}
+
+.industries-section {
+  padding-top: 40px;
 }
 
 .faq-section {
@@ -593,6 +600,7 @@ footer {
 
   .proof-band,
   .local-grid,
+  .industry-grid,
   .metric-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -636,6 +644,7 @@ footer {
   .proof-band,
   .service-grid,
   .local-grid,
+  .industry-grid,
   .metric-grid {
     grid-template-columns: 1fr;
   }

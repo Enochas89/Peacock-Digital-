@@ -17,14 +17,17 @@ Core proof themes:
 
 ## Required Business Inputs
 
-These are needed before the site can be fully optimized for local search:
-- Real business phone number
-- Real business address or service-area city list
+Known:
+- Phone: (423) 454-1803
+- Service area: Knoxville, TN to Chattanooga, TN
+- Target industries: contractors, dentists, lawyers, restaurants
+- Testimonials: three customer quotes supplied
+
+Still needed:
+- Physical address, if publicly listed
 - Google Business Profile URL
-- Primary city and secondary service areas
-- Top 3 customer industries
-- Real testimonials or case studies
 - Real social/profile links
+- Preferred primary market: Knoxville, Chattanooga, or equal focus
 
 ## Target Keyword Map
 
@@ -33,12 +36,16 @@ Homepage:
 - local SEO agency
 - local SEO company
 - Google Business Profile optimization
+- local SEO Knoxville TN
+- local SEO Chattanooga TN
 
 City landing pages:
 - local SEO agency in [city]
 - local SEO services in [city]
 - Google Business Profile optimization in [city]
 - SEO company for small businesses in [city]
+- local SEO agency in Knoxville
+- local SEO agency in Chattanooga
 
 Service pages:
 - Google Business Profile optimization services
@@ -48,6 +55,8 @@ Service pages:
 - local SEO for contractors
 - local SEO for medical practices
 - local SEO for law firms
+- local SEO for dentists
+- local SEO for restaurants
 
 ## Site Structure
 
@@ -60,8 +69,12 @@ Phase 1:
 - Contact
 
 Phase 2:
-- City pages for each real service area
-- Industry pages for each niche with proof or expertise
+- Knoxville Local SEO
+- Chattanooga Local SEO
+- Contractor SEO
+- Dentist SEO
+- Lawyer SEO
+- Restaurant SEO
 - Case studies
 - Blog/resource hub
 
@@ -70,12 +83,12 @@ Phase 2:
 - Set up Google Search Console and Bing Webmaster Tools
 - Connect analytics and conversion tracking
 - Verify Google Business Profile
-- Replace placeholder phone/address/service-area data
+- Confirm address and Google Business Profile details
 - Add final LocalBusiness schema with real NAP
 - Create XML sitemap after production domain is live
 - Publish 3 core service pages
-- Build first city page for the main service area
-- Add real testimonials and proof
+- Build Knoxville and Chattanooga city pages
+- Add supplied testimonials and request names/company types where possible
 - Clean up NAP consistency across major directories
 
 ## 60-90 Days
