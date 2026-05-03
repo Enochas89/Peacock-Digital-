@@ -15,6 +15,26 @@ Core proof themes:
 - Senior strategist on every account
 - Google Business Profile, service pages, reviews, citations, and reporting handled together
 
+## Service Tiers
+
+Starter Package - Foundation:
+Best for small businesses just getting started online. Starting at $500/month.
+Promise: get the business visible on Google and start bringing in first leads.
+
+Growth Package - Lead Generation:
+Best for businesses ready to consistently generate new work. Starting at $1,500/month.
+Promise: build a system that brings qualified leads month after month.
+
+Domination Package - Market Leader:
+Best for businesses that want to own their market. Starting at $3,500+/month.
+Promise: position the business as the top choice in its area.
+
+Client-facing explanation:
+Peacock Digital Agency does not just "do SEO." It builds a system that puts the business in front of people when they are actively looking for what it offers.
+
+Sales line:
+If someone searches for your service in your area, the goal is simple: your business shows up, and they call you.
+
 ## Required Business Inputs
 
 Known:
