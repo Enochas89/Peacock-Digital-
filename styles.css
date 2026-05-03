@@ -87,6 +87,7 @@ img {
   color: var(--peacock-dark);
 }
 
+.header-phone,
 .header-cta,
 .primary-button,
 .secondary-button,
@@ -105,6 +106,11 @@ img {
 .lead-form button {
   color: var(--white);
   background: var(--peacock);
+}
+
+.header-phone {
+  color: var(--peacock-dark);
+  border: 1px solid var(--line);
 }
 
 .secondary-button {
@@ -256,6 +262,25 @@ h3 {
   overflow: hidden;
   background: #dce8e5;
   border-radius: 999px;
+}
+
+.contact-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 14px 0 4px;
+}
+
+.contact-options a {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  color: var(--peacock-dark);
+  background: var(--mist);
+  border: 1px solid #cbd9d5;
+  border-radius: 6px;
+  font-weight: 900;
 }
 
 .progress span {
@@ -746,6 +771,12 @@ footer {
 
   .header-cta {
     display: none;
+  }
+
+  .header-phone {
+    min-height: 40px;
+    padding: 0 12px;
+    font-size: 0.9rem;
   }
 
   .hero,
