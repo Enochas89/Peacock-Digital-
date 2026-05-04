@@ -619,6 +619,24 @@ textarea {
   padding-top: 40px;
 }
 
+.service-area-strip {
+  margin-top: 24px;
+  padding: 24px;
+  background: var(--mist);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.service-area-strip p:last-of-type {
+  margin-bottom: 10px;
+  color: var(--muted);
+}
+
+.service-area-strip a {
+  color: var(--peacock-dark);
+  font-weight: 900;
+}
+
 .subpage-hero {
   padding: 98px 22px 74px;
   color: var(--white);

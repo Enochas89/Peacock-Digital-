@@ -39,7 +39,9 @@ If someone searches for your service in your area, the goal is simple: your busi
 
 Known:
 - Phone: (423) 454-1803
-- Service area: Knoxville, TN to Chattanooga, TN
+- Primary service areas: Knoxville, TN; Chattanooga, TN; Cleveland, TN; Ringgold, GA
+- Secondary service areas: Ooltewah, TN; Collegedale, TN; East Ridge, TN; Red Bank, TN; Hixson, TN; Fort Oglethorpe, GA; Rossville, GA
+- Outer expansion areas: Athens, TN; Dayton, TN; Sweetwater, TN; Loudon, TN; Lenoir City, TN; Soddy-Daisy, TN
 - Target industries: contractors, dentists, lawyers, restaurants
 - Testimonials: three customer quotes supplied
 
@@ -59,6 +61,29 @@ Homepage:
 - Google Business Profile optimization
 - local SEO Knoxville TN
 - local SEO Chattanooga TN
+- SEO services Cleveland TN
+- SEO services Ringgold GA
+
+Core service keywords:
+- SEO services
+- local SEO services
+- SEO company
+- SEO agency
+- search engine optimization
+- Google ranking services
+- website SEO
+- SEO marketing
+- digital marketing agency
+
+High-converting SEO keywords:
+- SEO services for small business
+- local business SEO
+- SEO for contractors
+- SEO for service businesses
+- lead generation SEO
+- Google Business optimization
+- website ranking services
+- SEO lead generation
 
 City landing pages:
 - local SEO agency in [city]
@@ -67,6 +92,36 @@ City landing pages:
 - SEO company for small businesses in [city]
 - local SEO agency in Knoxville
 - local SEO agency in Chattanooga
+- SEO services Knoxville TN
+- SEO company Knoxville TN
+- digital marketing Knoxville TN
+- SEO for small business Knoxville TN
+- SEO services Chattanooga TN
+- SEO agency Chattanooga TN
+- Google ranking Chattanooga TN
+- SEO marketing Chattanooga TN
+- local SEO Cleveland TN
+- SEO company Cleveland TN
+- SEO for contractors Cleveland TN
+- local SEO Ringgold GA
+- SEO company Ringgold GA
+- small business SEO Ringgold GA
+
+Secondary city keyword targets:
+- SEO services Ooltewah TN
+- SEO services Hixson TN
+- SEO services Red Bank TN
+- SEO services East Ridge TN
+- SEO services Fort Oglethorpe GA
+- SEO services Rossville GA
+
+Outer expansion city keyword targets:
+- SEO services Athens TN
+- SEO services Dayton TN
+- SEO services Sweetwater TN
+- SEO services Loudon TN
+- SEO services Lenoir City TN
+- SEO services Soddy-Daisy TN
 
 Service pages:
 - Google Business Profile optimization services
@@ -78,6 +133,19 @@ Service pages:
 - local SEO for law firms
 - local SEO for dentists
 - local SEO for restaurants
+- SEO for home services
+- local lead generation services
+- service business marketing
+- trades business SEO
+
+High-intent sales keywords:
+- affordable SEO services
+- best SEO company near me
+- SEO services near me
+- top SEO agency
+- small business marketing services
+- increase website traffic
+- get more leads from Google
 
 ## Long-Tail Keyword Strategy
 
@@ -86,6 +154,8 @@ The fastest path is to build useful pages around specific buyer intent:
 
 - local SEO agency Knoxville TN
 - local SEO company Chattanooga TN
+- SEO services Cleveland TN
+- SEO services Ringgold GA
 - Google Business Profile optimization Knoxville
 - Google Business Profile optimization Chattanooga
 - SEO for contractors Knoxville
@@ -107,6 +177,10 @@ The fastest path is to build useful pages around specific buyer intent:
 - restaurant SEO Chattanooga
 - catering SEO Knoxville
 - reservations SEO Chattanooga
+- affordable SEO services near me
+- lead generation SEO for service businesses
+- trades business SEO Tennessee
+- local lead generation services Georgia
 
 Important rule:
 Use these phrases naturally in helpful page sections. Do not keyword-stuff.
