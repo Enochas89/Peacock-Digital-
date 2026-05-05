@@ -271,7 +271,7 @@ h3 {
   margin: 14px 0 4px;
 }
 
-.contact-options a {
+.contact-options button {
   display: inline-flex;
   min-height: 44px;
   align-items: center;
@@ -280,7 +280,15 @@ h3 {
   background: var(--mist);
   border: 1px solid #cbd9d5;
   border-radius: 6px;
+  cursor: pointer;
+  font: inherit;
   font-weight: 900;
+}
+
+.contact-options button.is-active {
+  color: var(--white);
+  background: var(--peacock-dark);
+  border-color: var(--peacock-dark);
 }
 
 .progress span {
@@ -321,6 +329,55 @@ textarea {
   border: 0;
   cursor: pointer;
   font: inherit;
+}
+
+.form-status {
+  display: none;
+  margin-top: 14px;
+  padding: 14px;
+  color: var(--ink);
+  background: var(--mist);
+  border: 1px solid #cbd9d5;
+  border-radius: 6px;
+}
+
+.form-status.is-visible {
+  display: grid;
+  gap: 10px;
+}
+
+.form-status strong,
+.form-status span {
+  display: block;
+}
+
+.form-status p {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.form-status-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.form-status-actions a,
+.form-status-actions button {
+  display: inline-flex;
+  min-height: 40px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 12px;
+  color: var(--peacock-dark);
+  background: var(--white);
+  border: 1px solid #cbd9d5;
+  border-radius: 6px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 900;
 }
 
 .proof-band {

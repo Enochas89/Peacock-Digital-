@@ -195,9 +195,9 @@
           <form class="lead-form" id="contact" aria-label="Request an SEO proposal">
             <p class="form-kicker">Free SEO Consultation</p>
             <h2>Request Your Free Audit</h2>
-            <div class="contact-options" aria-label="Direct contact options">
-              <a href="tel:+14234541803">Call</a>
-              <a href="sms:+14234541803">Text</a>
+            <div class="contact-options" aria-label="Choose contact method">
+              <button class="is-active" type="button" data-contact-method="call">Call</button>
+              <button type="button" data-contact-method="text">Text</button>
             </div>
             <div class="progress">
               <span></span>
@@ -228,9 +228,10 @@
               What should we improve?
               <textarea name="message" rows="4"></textarea>
             </label>
-            <button type="submit">Text My Audit Request</button>
+            <button class="submit-button" type="submit">Call About My Audit</button>
+            <div class="form-status" role="status" aria-live="polite"></div>
             <p class="form-note">
-              Submitting opens a text message to Peacock Digital Agency with your details.
+              Submitting opens your selected contact option and prepares your audit details.
               You can also call or text directly at (423) 454-1803.
             </p>
           </form>
