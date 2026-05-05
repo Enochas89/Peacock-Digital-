@@ -109,29 +109,3 @@ form?.addEventListener("submit", (event) => {
 });
 
 updateContactMethod(contactMethod);
-
-document.querySelectorAll(".service-card").forEach((card) => {
-  const video = card.querySelector("video[data-video-src]");
-  if (!video) return;
-
-  const loadVideo = () => {
-    if (!video.src) {
-      video.src = video.dataset.videoSrc;
-    }
-  };
-
-  const playVideo = () => {
-    loadVideo();
-    video.play().catch(() => {});
-  };
-
-  const pauseVideo = () => {
-    video.pause();
-    video.currentTime = 0;
-  };
-
-  card.addEventListener("mouseenter", playVideo);
-  card.addEventListener("focusin", playVideo);
-  card.addEventListener("mouseleave", pauseVideo);
-  card.addEventListener("focusout", pauseVideo);
-});

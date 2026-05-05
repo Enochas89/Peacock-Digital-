@@ -502,12 +502,20 @@ textarea {
   background: linear-gradient(180deg, rgba(16, 32, 29, 0.08), rgba(16, 32, 29, 0.82));
 }
 
-.service-card-back video {
+.service-card-back img {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transform: scale(1.02);
+  transition: transform 900ms ease;
+}
+
+.service-card:hover .service-card-back img,
+.service-card:focus .service-card-back img,
+.service-card:focus-within .service-card-back img {
+  transform: scale(1.12);
 }
 
 .service-card-back-copy {
@@ -530,6 +538,10 @@ textarea {
 
 @media (prefers-reduced-motion: reduce) {
   .service-card-inner {
+    transition: none;
+  }
+
+  .service-card-back img {
     transition: none;
   }
 }
