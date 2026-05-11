@@ -1,4 +1,7 @@
-const RESEND_ENDPOINT = "https://api.resend.com/emails";
+const https = require("https");
+
+const RESEND_HOST = "api.resend.com";
+const RESEND_PATH = "/emails";
 
 const escapeHtml = (value) =>
   String(value || "")
@@ -42,6 +45,42 @@ const buildEmail = ({ name, email, website, priority, message }) => {
       </div>`
   };
 };
+
+const sendEmail = (apiKey, payload) =>
+  new Promise((resolve, reject) => {
+    const body = JSON.stringify(payload);
+    const request = https.request(
+      {
+        hostname: RESEND_HOST,
+        path: RESEND_PATH,
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${apiKey}`,
+          "Content-Type": "application/json",
+          "Content-Length": Buffer.byteLength(body)
+        }
+      },
+      (resendResponse) => {
+        let data = "";
+
+        resendResponse.on("data", (chunk) => {
+          data += chunk;
+        });
+
+        resendResponse.on("end", () => {
+          resolve({
+            ok: resendResponse.statusCode >= 200 && resendResponse.statusCode < 300,
+            status: resendResponse.statusCode,
+            details: data
+          });
+        });
+      }
+    );
+
+    request.on("error", reject);
+    request.write(body);
+    request.end();
+  });
 
 module.exports = async function handler(request, response) {
   if (request.method !== "POST") {
@@ -91,29 +130,31 @@ module.exports = async function handler(request, response) {
 
   const email = buildEmail(payload);
 
-  const resendResponse = await fetch(RESEND_ENDPOINT, {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${apiKey}`,
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
+  let resendResponse;
+
+  try {
+    resendResponse = await sendEmail(apiKey, {
       from,
       to,
       reply_to: payload.email,
       subject: email.subject,
       text: email.text,
       html: email.html
-    })
-  });
+    });
+  } catch (error) {
+    console.error("Resend request crashed:", error);
+    return response.status(502).json({
+      error: "Email request failed before reaching Resend",
+      details: error.message
+    });
+  }
 
   if (!resendResponse.ok) {
-    const details = await resendResponse.text();
-    console.error("Resend request failed:", details);
+    console.error("Resend request failed:", resendResponse.details);
     return response.status(502).json({
       error: "Email could not be sent",
       status: resendResponse.status,
-      details
+      details: resendResponse.details
     });
   }
 
