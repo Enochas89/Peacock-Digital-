@@ -54,7 +54,13 @@ module.exports = async function handler(request, response) {
   const from = process.env.RESEND_FROM_EMAIL || "Peacock Digital Agency <onboarding@resend.dev>";
 
   if (!apiKey || !to) {
-    return response.status(500).json({ error: "Email service is not configured" });
+    return response.status(500).json({
+      error: "Email service is not configured",
+      missing: {
+        RESEND_API_KEY: !apiKey,
+        RESEND_TO_EMAIL: !to
+      }
+    });
   }
 
   let body = request.body || {};
@@ -104,7 +110,11 @@ module.exports = async function handler(request, response) {
   if (!resendResponse.ok) {
     const details = await resendResponse.text();
     console.error("Resend request failed:", details);
-    return response.status(502).json({ error: "Email could not be sent" });
+    return response.status(502).json({
+      error: "Email could not be sent",
+      status: resendResponse.status,
+      details
+    });
   }
 
   return response.status(200).json({ ok: true });
