@@ -43,7 +43,21 @@ const getAuditMessage = (data) => {
   };
 };
 
-const renderStatus = ({ name, body, smsUrl, telUrl, method }) => {
+const sendAuditRequest = async (data) => {
+  const response = await fetch("/api/request-audit", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(Object.fromEntries(data.entries()))
+  });
+
+  if (!response.ok) {
+    throw new Error("Audit request could not be sent");
+  }
+};
+
+const renderStatus = ({ name, body, smsUrl, telUrl, method, sent }) => {
   if (!status) return;
 
   status.classList.add("is-visible");
@@ -56,11 +70,13 @@ const renderStatus = ({ name, body, smsUrl, telUrl, method }) => {
   const callLink = document.createElement("a");
   const copyButton = document.createElement("button");
 
-  heading.textContent = `Ready, ${name}.`;
+  heading.textContent = sent ? `Request sent, ${name}.` : `Ready, ${name}.`;
   message.textContent =
-    method === "text"
+    !sent
+      ? `The email request could not be confirmed, but your details are ready. Use the buttons below or call ${readablePhone}.`
+      : method === "text"
       ? `Your text message should open with the audit details filled in. If it does not, use the buttons below or call ${readablePhone}.`
-      : `Your phone app should open now. Your audit details are ready to copy before or after the call.`;
+      : `Your phone app should open now. Your audit details were also prepared for the team.`;
 
   actions.className = "form-status-actions";
   textLink.href = smsUrl;
@@ -89,7 +105,7 @@ methodButtons.forEach((button) => {
   });
 });
 
-form?.addEventListener("submit", (event) => {
+form?.addEventListener("submit", async (event) => {
   event.preventDefault();
 
   const data = new FormData(form);
@@ -97,15 +113,36 @@ form?.addEventListener("submit", (event) => {
   const smsUrl = `sms:${contactPhone}?&body=${encodeURIComponent(auditMessage.body)}`;
   const telUrl = `tel:${contactPhone}`;
   const destination = contactMethod === "text" ? smsUrl : telUrl;
+  let sent = false;
+
+  if (submitButton) {
+    submitButton.disabled = true;
+    submitButton.textContent = "Sending...";
+  }
+
+  try {
+    await sendAuditRequest(data);
+    sent = true;
+  } catch {
+    sent = false;
+  }
 
   renderStatus({
     ...auditMessage,
     smsUrl,
     telUrl,
-    method: contactMethod
+    method: contactMethod,
+    sent
   });
 
-  window.location.href = destination;
+  if (submitButton) {
+    submitButton.disabled = false;
+    updateContactMethod(contactMethod);
+  }
+
+  window.setTimeout(() => {
+    window.location.href = destination;
+  }, 350);
 });
 
 updateContactMethod(contactMethod);
